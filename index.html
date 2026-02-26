@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="bg-slate-600 text-white sticky top-0 z-10">
+      <nav class="flex flex-wrap justify-between p-6 container mx-auto">
+        <a href="index.html" class="text-xl font-bold tracking-wide"
+          >SwiftCart</a
+        >
+
+        <ul class="flex flex-wrap gap-4">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section
+        class="bg-[url(/bg.avif)] bg-no-repeat bg-cover bg-center object-cover h-[calc(100vh-76px)] bg-fixed opacity-90"
+      >
+        <div class="flex flex-col justify-center items-center h-full space-y-5">
+          <h1 class="text-white text-6xl font-bold">
+            Elevate Your
+            <span class="text-blue-400 text-shadow-lg">Lifestyle</span>
+          </h1>
+
+          <p class="text-white text-xl">
+            এক্সক্লুসিভ ফ্যাশন এবং লেটেস্ট টেকনোলজির সেরা কালেকশন।
+          </p>
+
+          <button
+            class="py-3 px-5 bg-yellow-400 font-bold text-xl rounded-md text-yellow-800 cursor-pointer hover:text-black"
+          >
+            Shop Now
+          </button>
+        </div>
+      </section>
+
+      <!-- Why Choose Us -->
+      <section class="container mx-auto mt-10 mb-28">
+        <div class="space-y-10">
+          <h1 class="flex justify-center text-4xl font-bold text-blue-500">
+            Why Choose Us!
+          </h1>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div
+              class="px-5 py-10 space-y-2 flex flex-col justify-center items-center shadow-md shadow-sky-700"
+            >
+              <i class="fa-solid fa-truck-fast text-4xl"></i>
+              <h2 class="text-2xl font-bold text-blue-600">Fast Delivery</h2>
+              <p class="text-center font-medium">
+                Get your orders delivered quickly and reliably right to your
+                doorstep. We ensure timely processing so you never have to wait
+                long.
+              </p>
+            </div>
+
+            <div
+              class="px-5 py-10 space-y-2 flex flex-col justify-center items-center shadow-md shadow-sky-700"
+            >
+              <i class=""></i>
+              <i class="fa-solid fa-headset text-4xl"></i>
+              <h2 class="text-2xl font-bold text-blue-600">24/7 Support</h2>
+              <p class="text-center font-medium">
+                Our support team is available 24/7 to assist you with any
+                questions or issues. We’re always here whenever you need help.
+              </p>
+            </div>
+
+            <div
+              class="px-5 py-10 space-y-2 flex flex-col justify-center items-center shadow-md shadow-sky-700"
+            >
+              <i class="fa-solid fa-house-lock text-4xl"></i>
+              <h2 class="text-2xl font-bold text-blue-600">Secure Payment</h2>
+              <p class="text-center font-medium">
+                Shop with confidence using our safe and secure payment system.
+                Your personal and financial information is always protected.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending -->
+      <section class="mt-10 mb-28 trendingDiv container mx-auto">
+        <div class="">
+          <h1
+            class="flex justify-center text-4xl font-bold text-blue-500 mb-10"
+          >
+            Trending Products
+          </h1>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 shadow-lg gap-4" id="trendingCard"></div>
+        </div>
+      </section>
+
+      <!-- Shop By Category -->
+      <section class="container mx-auto">
+        <div class="space-y-10">
+          <h3 class="text-blue-700 text-center text-4xl font-bold">
+            Shop By Category
+          </h3>
+          <div class="flex flex-wrap gap-4 justify-center items-center" id="categoryDiv">
+            
+          </div>
+
+          <div
+            class="grid md:grid-cols-2 lg:grid-cols-4 shadow-lg gap-4"
+            id="trendingCards"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Newsletter & Footer -->
+      <section class="bg-gray-600 mt-10">
+        <div
+          class="container mx-auto py-10 grid md:grid-cols-2 lg:grid-cols-4 items-center gap-6"
+        >
+          <div class="py-10 px-5 space-y-4">
+            <h3 class="text-white text-4xl font-bold">swiftcart</h3>
+            <p class="text-white opacity-70">
+              আমরা দিচ্ছি প্রিমিয়াম কোয়ালিটি পণ্য এবং দ্রুততম ডেলিভারি সেবা।
+              আপনার শপিং অভিজ্ঞতাকে সহজ এবং আনন্দদায়ক করাই আমাদের লক্ষ্য।
+            </p>
+            <div class="text-2xl flex gap-10">
+              <a
+                class="rounded-full bg-white/10 hover:bg-blue-700 p-5 hover:text-white"
+                href="./index.html"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                class="rounded-full bg-white/10 hover:bg-blue-700 p-5 hover:text-white"
+                href="./index.html"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                class="rounded-full bg-white/10 hover:bg-blue-700 p-5 hover:text-white"
+                href="./index.html"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="py-10 px-5 text-white space-y-4">
+            <h4 class="text-2xl font-bold">Quick Links</h4>
+
+            <div class="flex flex-col space-y-4">
+              <a href="./banner-image.png">
+                <i class="fa-solid fa-angle-right"></i>
+                Home
+              </a>
+              <a href="./banner-image.png">
+                <i class="fa-solid fa-angle-right"></i>
+                Home
+              </a>
+              <a href="./banner-image.png">
+                <i class="fa-solid fa-angle-right"></i>
+                Home
+              </a>
+              <a href="./banner-image.png">
+                <i class="fa-solid fa-angle-right"></i>
+                Home
+              </a>
+            </div>
+          </div>
+
+          <div class="py-10 px-5 text-white space-y-4">
+            <h3 class="text-2xl font-bold">Customer Service</h3>
+
+            <div class="flex flex-col space-y-4">
+              <a href="./banner-image.png"> Privacy Policy </a>
+              <a href="./banner-image.png"> Terms & Conditions </a>
+              <a href="./banner-image.png"> Refund Policy </a>
+              <a href="./banner-image.png"> Order Tracking </a>
+            </div>
+          </div>
+
+          <div class="py-10 px-5 space-y-4">
+            <h3 class="text-white text-3xl font-bold">Join Our Newsletter</h3>
+
+            <p class="text-white/50">
+              সেরা অফার এবং নতুন কালেকশনের আপডেট পেতে সাবস্ক্রাইব করুন।
+            </p>
+
+            <div class="flex flex-col w-full space-y-4">
+              <input
+                class="py-2 px-4 outline-2 focus:border-sky-500 focus:outline focus:outline-sky-500 focus:bg-white/30 focus:text-black rounded-md placeholder:text-white"
+                type="text"
+                placeholder="Enter your email..."
+              />
+
+              <button
+                class="bg-blue-700 py-2 px-4 text-white font-bold text-lg rounded-md"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    
+
+    <!-- script -->
+    <script src="./main.js"></script>
+  </body>
+</html>
